@@ -1,0 +1,199 @@
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Josefin+Sans:wght@300;500&family=Karla:wght@400;700&family=League+Spartan:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap');
+    body {
+        margin: 0;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Karla', sans-serif;
+        font-family: 'League Spartan', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        padding: 3rem 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .Box {
+        margin-left: 20px;
+        padding-bottom: 20px;
+        width: 250px;
+    }
+    /* color of the h3 */
+    
+    .blue {
+        color: blue;
+    }
+    
+    .red {
+        color: red;
+    }
+    
+    .orange {
+        color: orange;
+    }
+    
+    .green {
+        color: green;
+    }
+    /* the gray line color  */
+    
+    .Box span {
+        width: 200px;
+        height: 2px;
+        background: gainsboro;
+        display: block;
+        position: relative;
+    }
+    /* the half color of the line */
+    
+    .Box span::before {
+        content: " ";
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        top: 0;
+        left: 0;
+    }
+    /* make cercals */
+    
+    .Box:first-child span::after,
+    .Box:nth-child(2) span::after {
+        content: " ";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+    }
+    /* make squers */
+    
+    .Box:nth-child(2) span::after {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+    /* Triangle UP */
+    
+    .Box:nth-child(3) span::after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: -20px;
+        border-width: 10px;
+        border-style: solid;
+    }
+    /* Triangle Down */
+    
+    .Box:nth-child(4) span::after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        border-width: 10px;
+        border-style: solid;
+    }
+    /* coloren before and after    */
+    
+    .Box .blue span::before,
+    .Box .blue span::after {
+        background-color: blue;
+        border-color: transparent transparent blue transparent;
+    }
+    
+    .Box .red span::before,
+    .Box .red span::after {
+        background-color: red;
+        border-color: transparent transparent red transparent;
+    }
+    
+    .Box .orange span::before,
+    .Box .orange span::after {
+        background-color: orange;
+        border-color: transparent transparent orange transparent;
+    }
+    
+    .Box .green span::before,
+    .Box .green span::after {
+        background-color: green;
+        border-color: transparent transparent green transparent;
+    }
+    /* remove color from triangles */
+    
+    .Box:nth-child(3) span::after,
+    .Box:nth-child(4) span::after {
+        background-color: transparent;
+    }
+    /* Coloren the Triangle Down */
+    
+    .Box:nth-child(4) .blue span::after {
+        border-color: blue transparent transparent transparent;
+    }
+    
+    .Box:nth-child(4) .red span::after {
+        border-color: red transparent transparent transparent;
+    }
+    
+    .Box:nth-child(4) .green span::after {
+        border-color: green transparent transparent transparent;
+    }
+    
+    .Box:nth-child(4) .orange span::after {
+        border-color: orange transparent transparent transparent;
+    }
+    /* LINK */
+    
+    .button {
+        font-size: 16px;
+        font-weight: 200;
+        letter-spacing: 1px;
+        padding: 13px 20px 13px;
+        outline: 0;
+        border: 1px solid black;
+        cursor: pointer;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-bottom: 40px;
+    }
+    
+    .button:after {
+        content: "";
+        background-color: #ffe54c;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        transition: 0.2s;
+    }
+    
+    .button:hover:after {
+        top: 0px;
+        left: 0px;
+    }
+    
+    @media (min-width: 768px) {
+        .button {
+            padding: 13px 50px 13px;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }

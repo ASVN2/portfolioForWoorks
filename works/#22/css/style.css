@@ -1,0 +1,117 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    -ms-overflow-style: none;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* -------------------------------- */
+
+.holder {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.holder .cell {
+    padding: 20px 0;
+    border-right: 1px solid #2e2e2e;
+    color: white;
+    width: 300px;
+    background: #242424;
+}
+
+.holder .cell:nth-child(3) {
+    background-color: #03a9f4;
+    padding: 40px 0;
+    color: white;
+}
+
+.holder .cell h2 {
+    font-weight: normal;
+    font-size: 2.1rem;
+}
+
+.holder .cell span {
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.holder .cell span::before {
+    content: '$';
+    position: absolute;
+    top: -5px;
+    left: -15px;
+    font-size: 20px;
+}
+
+.holder .cell span::after {
+    content: '/Mo';
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+    font-size: 15px;
+}
+
+.holder .cell ul li {
+    border-top: 1px solid #2e2e2e;
+    padding: 20px 25px;
+    color: #4c4d4f;
+}
+
+.holder .cell ul li:first-child {
+    margin-top: 30px;
+}
+
+.holder .cell ul li:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+.holder .cell:nth-child(3) ul li {
+    color: white;
+    background-color: transparent;
+    border-top: 1px solid #d9d9d991;
+}
+
+.holder .cell a {
+    padding: 15px 20px;
+    width: 160px;
+    height: 50px;
+    color: white;
+    margin: 34px auto 10px auto;
+    border: 1.5px solid white;
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.holder .cell a:hover {
+    background-color: white;
+    color: #2a2a2a;
+}

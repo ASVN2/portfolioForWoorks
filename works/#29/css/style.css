@@ -1,0 +1,141 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    -ms-overflow-style: none;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ------------------------------------------ */
+
+.holder {
+    display: flex;
+    gap: 50px;
+    padding: 100px 0;
+}
+
+@media(max-width:787px) {
+    .holder {
+        gap: 100px;
+        flex-direction: column;
+    }
+}
+
+.holder .plan {
+    background-color: #1998ff;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #949494;
+}
+
+.holder .plan-2 {
+    background-color: white;
+    color: #545454;
+}
+
+.holder .plan .price {
+    position: relative;
+    top: -75px;
+    height: 150px;
+    width: 150px;
+    border: 10px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 auto;
+    background-color: #1998ff;
+    box-shadow: 0 0 0px 2px #1998ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+
+.holder .plan-2 .price {
+    background-color: #545454;
+    box-shadow: 0 0 0px 2px #545454;
+}
+
+.holder .plan:first-child .price::before {
+    content: 'Hot';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    height: 45px;
+    width: 45px;
+    color: #1998ff;
+    background-color: white;
+    border: 2px solid #1998ff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.holder .plan .amount {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+.holder .plan h1.title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: white;
+}
+
+.holder .plan-2 h1.title {
+    color: #545454;
+}
+
+.holder .plan .feauters li {
+    padding: 15px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #eaeaea;
+    color: white;
+}
+
+.holder .plan-2 .feauters li {
+    color: #545454;
+}
+
+.holder .plan a.submit {
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
+    background: #fff;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 30px auto;
+    font-size: 20px;
+    color: #1998ff;
+}
+
+.holder .plan-2 a.submit {
+    background-color: #1998ff;
+    color: white;
+}

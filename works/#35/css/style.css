@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Josefin+Sans:wght@300;500&family=Karla:wght@400;700&family=League+Spartan:wght@400;500;700&family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap');
+body {
+    font-family: 'League Spartan', sans-serif;
+    -ms-overflow-style: none;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ :root {
+    --orange: #fc5103;
+    --main-black: #333333;
+    --gray: #b0b1b2;
+}
+
+
+/* -------------------------------- */
+
+table {
+    padding: 0;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: #64646f33 0px 7px 29px 0px;
+}
+
+table thead {
+    margin: 0;
+}
+
+table thead tr th {
+    background-color: var(--orange);
+    padding: 1.7rem 4rem;
+    font-weight: normal;
+    color: white;
+    font-size: 20px;
+}
+
+tbody td.price {
+    position: relative;
+    font-size: 50px;
+    padding: 15px 15px;
+    color: var(--orange);
+}
+
+sup {
+    color: var(--main-black);
+    font-size: 20px;
+    position: relative;
+    top: -25px;
+    left: -10px;
+}
+
+tbody td.price::before {
+    content: "$";
+    position: absolute;
+    color: var(--main-black);
+    top: 15px;
+    left: 35px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+tbody td.price::after {
+    content: "Year";
+    position: absolute;
+    color: var(--gray);
+    right: 59px;
+    bottom: 27px;
+    font-size: 15px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fc52030a;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+th:not(:first-child):not(:last-child),
+td:not(:first-child):not(:last-child) {
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+}
+
+
+/* tbody */
+
+tbody i {
+    font-size: 20px;
+}
+
+table tbody {}
+
+table tbody tr {}
+
+table tbody tr td {
+    padding: 20px 50px;
+    color: var(--main-black);
+}
+
+table tbody tr td:first-child {
+    color: var(--gray);
+    font-weight: bold;
+}
+
+
+/* tfoot */
+
+table tfoot tr td a {
+    text-decoration: none;
+    margin: 20px auto;
+    display: block;
+    color: white;
+    background-color: var(--main-black);
+    width: fit-content;
+    padding: 6px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.orange {
+    background-color: var(--orange);
+}

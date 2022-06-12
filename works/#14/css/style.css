@@ -1,0 +1,141 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    -ms-overflow-style: none;
+    background-color: #eeeeee;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.holder {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* small */
+
+@media (min-width: 768px) {
+    .holder {
+        width: 750px;
+    }
+}
+
+
+/* medium */
+
+@media (min-width: 992px) {
+    .holder {
+        width: 970px;
+    }
+}
+
+
+/* large */
+
+@media (min-width: 1200px) {
+    .holder {
+        width: 1270px;
+    }
+}
+
+
+/* --------------------------- */
+
+.holder {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid: 10px;
+}
+
+@media(max-width:991px) {
+    .holder {
+        display: block;
+    }
+}
+
+div:not(div.holder) {
+    margin: 10px;
+    padding: 20px;
+    margin: 10px;
+    padding: 20px;
+    border-bottom: 3px solid #fe3d02;
+    position: relative;
+}
+
+div:not(div.holder)::before {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\22";
+    bottom: -20px;
+    right: 10px;
+    font-size: 3.5rem;
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    color: gray;
+}
+
+.holder .one,
+.holder .five,
+.holder .six {
+    background-color: white;
+    grid-column: span 2;
+}
+
+.holder .two {
+    background-color: white;
+    color: black;
+}
+
+.holder .three {
+    background-color: black;
+    color: white;
+    grid-row: span 3;
+}
+
+.holder .four {
+    background-color: white;
+    color: black;
+    grid-row: span 2;
+}
+
+.holder .five {
+    background-color: black;
+    color: white;
+}
+
+.holder .seven,
+.holder .nine,
+.holder .ten {
+    background-color: white;
+    color: black;
+}
+
+.holder .eight {
+    background-color: black;
+    color: white;
+}
+
+.holder h2 {
+    font-size: 1.2rem;
+}
+
+.holder span {
+    font-weight: bold;
+    color: gray;
+}
+
+.holder h3,
+.holder p {
+    line-height: 2;
+}

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Josefin+Sans:wght@300;500&family=Karla:wght@400;700&family=League+Spartan:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap');
+body {
+    font-family: 'Cairo', sans-serif;
+    -ms-overflow-style: none;
+    background: #f4f4f4;
+    min-width: 100vh;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 20px auto;
+    width: 970px;
+}
+
+
+/* Start save 50% */
+
+.save {
+    display: flex;
+    margin: 20px 5px 20px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    justify-content: flex-end;
+}
+
+.save span {
+    position: relative;
+    background-color: #2196f3;
+    padding: 10px 35px 10px 15px;
+    width: fit-content;
+}
+
+.save span::before {
+    content: ' ';
+    position: absolute;
+    border-style: solid;
+    border-width: 20px;
+    border-color: transparent #f4f4f4 transparent transparent;
+    right: 0;
+    top: 0;
+}
+
+
+/* End Save 50% */
+
+
+/* ----------------- */
+
+.features .holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Start Style basic */
+
+.features .holder .basic {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    flex: 1;
+}
+
+.features .holder .basic h2 {
+    background-color: #f44336;
+    margin: 0;
+    padding: 15px 20px;
+    color: white;
+    font-weight: normal;
+}
+
+.features .holder ul {
+    padding: 10px 20px;
+}
+
+.features .holder ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.features .holder ul li p {
+    font-size: 20px;
+    color: #201e1e;
+}
+
+
+/* End Style basic */
+
+
+/* Start Style Professional */
+
+.features .holder .Professional {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    flex: 1;
+}
+
+.features .holder .Professional h2 {
+    background-color: #2196f3;
+    margin: 0;
+    padding: 15px 20px;
+    color: white;
+    font-weight: normal;
+}
+
+
+/* End Style Professional */
+
+
+/* Start make No */
+
+.features .holder .basic ul li .no {
+    width: 25px;
+    height: 25px;
+    background-color: #e7135b;
+    margin-right: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+}
+
+.features .holder .basic ul li .no::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 12px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(50deg);
+    -webkit-transform: translate(-50%, -50%) rotate(50deg);
+    -moz-transform: translate(-50%, -50%) rotate(50deg);
+    -ms-transform: translate(-50%, -50%) rotate(50deg);
+    -o-transform: translate(-50%, -50%) rotate(50deg);
+}
+
+.features .holder .basic ul li .no::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 12px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-50deg);
+    -webkit-transform: translate(-50%, -50%) rotate(-50deg);
+    -moz-transform: translate(-50%, -50%) rotate(-50deg);
+    -ms-transform: translate(-50%, -50%) rotate(-50deg);
+    -o-transform: translate(-50%, -50%) rotate(-50deg);
+}
+
+
+/* Finish Makes End */
+
+
+/* Start make no */
+
+.features .holder ul li .yes {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: #009688;
+    margin-right: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+}
+
+.features .holder ul li .yes::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 12px;
+    background-color: white;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.features .holder ul li .yes::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 6px;
+    background: white;
+    top: 51%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    -moz-transform: translate(-50%, -50%) rotate(-45deg);
+    -ms-transform: translate(-50%, -50%) rotate(-45deg);
+    -o-transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+/* End makes no */

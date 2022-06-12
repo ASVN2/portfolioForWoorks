@@ -1,0 +1,249 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    -ms-overflow-style: none;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ------------------------------ */
+
+.contant {
+    background-color: #333333;
+    width: 100%;
+}
+
+.holder {
+    display: flex;
+    padding: 40px 50px;
+    color: white;
+    gap: 50px;
+    width: 1600px;
+    margin: auto;
+}
+
+.holder .col {}
+
+.holder .col h2 {
+    font-weight: normal;
+    font-size: 1.6rem;
+}
+
+.holder .col p {
+    color: #727272;
+    line-height: 1.5;
+}
+
+.holder .col .cells {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.holder .col .cells .cell {}
+
+.holder .col .cells .cell .row {
+    line-height: 0;
+    padding-top: 20px;
+}
+
+.holder .col .cells .cell .row span {}
+
+.holder .col .cells .cell .row p {}
+
+.holder .col h2 {}
+
+.holder .col .links {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.holder .col .links a {
+    color: #727272;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    padding: 10px 0;
+}
+
+.holder .col .links a:hover {
+    color: white;
+}
+
+.holder .col h2 {}
+
+.holder .col p {}
+
+.holder .col .email {
+    display: flex;
+    gap: 15px;
+}
+
+.holder .col .email input[type="email"] {
+    background-color: #4c4c4c;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.holder .col .email input[type="submit"] {
+    -webkit-appearance: button;
+    padding: 15px 25px;
+    outline: none;
+    border: none;
+    background: #e52727;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.holder .col .email input[type="submit"]:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    cursor: pointer;
+}
+
+.holder .col:nth-child(4) span {
+    display: block;
+    margin: 0;
+    color: #727272;
+    margin-top: 15px;
+}
+
+.holder .col ul {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0 20px 0;
+}
+
+.holder .col ul li {
+    padding: 10px;
+    background: #00ad75;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-items: center;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.holder .col ul li:nth-child(1) {
+    background-color: #1c99e7;
+}
+
+.holder .col ul li:nth-child(2) {
+    background-color: #3f62a9;
+}
+
+.holder .col ul li:nth-child(3) {
+    background-color: #a92d97;
+}
+
+.holder .col ul li:nth-child(4) {
+    background-color: #0d709f;
+}
+
+.holder .col ul li:nth-child(5) {
+    background-color: #c2181d;
+}
+
+.holder .col ul li:nth-child(6) {
+    background-color: #68508c;
+}
+
+.holder .col ul li:nth-child(7) {
+    background-color: #70cff2;
+}
+
+.holder .col ul li:hover {
+    opacity: .9;
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+
+.holder .col ul li a {
+    color: white;
+}
+
+.holder .col ul li a i {}
+
+
+/* --------------------------- */
+
+.powerd-color {
+    background-color: #2b2b2b;
+    display: flex;
+    align-items: center;
+}
+
+.powerd {
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 50px 20px 50px;
+}
+
+.powerd .info {}
+
+.powerd .info span {
+    color: white;
+}
+
+.powerd .info p {
+    color: #727272;
+}
+
+.powerd .cards {}
+
+.powerd .cards img {
+    width: 60px;
+    height: 30px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    background-color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

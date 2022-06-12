@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Josefin+Sans:wght@300;500&family=Karla:wght@400;700&family=League+Spartan:wght@400;500;700&family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap');
+body {
+    font-family: 'League Spartan', sans-serif;
+    -ms-overflow-style: none;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ----------------------------------- */
+
+.holder {
+    background-color: #f2eff6;
+    padding: 30px 20px;
+    width: 400px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.holder .edit {
+    align-items: flex-start;
+    display: inline-flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.holder a {
+    text-align: end;
+    color: #4d9de2;
+    padding-bottom: 15px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.holder form {
+    background-color: #e3e2e8;
+    padding: 10px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.holder form label i {
+    color: #aca9b0;
+}
+
+.holder form input[type="search"] {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #aca9b0;
+    font-size: 18px;
+}
+
+.holder .cells {
+    margin: 20px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+    gap: 10px;
+}
+
+.holder .cells .cell {
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 5px 10px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.holder .cells .cell::before {
+    position: absolute;
+    content: " ";
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #fb9505;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 20px;
+    left: 15px;
+    z-index: -1;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.holder .cells .cell:hover::before {
+    transform: scale(7);
+    -webkit-transform: scale(7);
+    -moz-transform: scale(7);
+    -ms-transform: scale(7);
+    -o-transform: scale(7);
+}
+
+.holder .cells .cell:nth-child(1)::before {
+    background-color: #0378fb
+}
+
+.holder .cells .cell:nth-child(3)::before {
+    background-color: #58616a;
+}
+
+.holder .cells .cell:nth-child(4)::before {
+    background-color: #fd4a28;
+}
+
+.holder .cells .cell h3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.holder .cells .cell h3 span {
+    font-size: 30px;
+}
+
+.holder .cells .cell h3 i {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: white;
+    background-color: #fd4a28;
+}
+
+.holder .cells .cell:first-child h3 i {
+    background-color: #0378fb;
+}
+
+.holder .cells .cell:nth-child(2) h3 i {
+    background-color: #fb9505;
+}
+
+.holder .cells .cell:nth-child(3) h3 i {
+    background-color: #58616a;
+}
+
+.holder .cells .cell p {
+    margin: 0;
+    padding: 10px 0;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #9a9b9e;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.holder .cells .cell:hover p {
+    color: white;
+}
+
+.holder .lists {
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.holder .lists h2 {
+    padding: 0 5px;
+    font-size: 1.65rem;
+}
+
+.holder .lists .list {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px 10px;
+}
+
+.holder .lists .list .left i {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #10b758;
+    color: white;
+}
+
+.holder .lists .list:nth-child(2) .left i {
+    background-color: #fec600;
+}
+
+.holder .lists .list .left span {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.holder .lists .list .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    color: #d6d6d6;
+}
+
+.holder .lists .list .right span {
+    color: #b3b3b3;
+}
+
+.holder .lists .list-1 {
+    border-bottom: 1px solid #e8e8e8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.holder .lists .list-2 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Josefin+Sans:wght@300;500&family=Karla:wght@400;700&family=League+Spartan:wght@400;500;700&family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap');
+body {
+    font-family: 'League Spartan', sans-serif;
+    -ms-overflow-style: none;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* -------------------------------------- */
+
+.holder {
+    margin: 50px;
+}
+
+.holder h1 {}
+
+.holder .inputs form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.holder input[type="search"],
+.holder input[type="submit"] {
+    outline: none;
+    border: none;
+    background: #d5d5d55e;
+    color: gray;
+    padding: 10px 15px;
+    border-radius: 3px;
+    width: 26%;
+}
+
+.holder input[type="submit"] {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background: rgb(47, 40, 149);
+    background: linear-gradient(90deg, rgba(47, 40, 149, 1) 0%, rgba(116, 33, 160, 1) 100%);
+    justify-self: flex-end;
+    width: 15%;
+}
+
+.holder .order-list {}
+
+.holder .order-list .title {
+    display: flex;
+    padding: 30px 5px;
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+}
+
+.holder .order-list .title ul {}
+
+.holder .order-list .title li:not(:first-child) {
+    margin: 0;
+    padding: 0 15px;
+}
+
+.holder .order-list .title li input {}
+
+
+/* ------------- */
+
+.holder .orderd {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px;
+    border-top: 1px solid gray;
+    color: gray;
+}
+
+.holder .orderd ul {}
+
+.holder .orderd li {
+    display: flex;
+    align-items: center;
+    /* padding: 0 30px; */
+}
+
+.holder .orderd .green,
+.holder .orderd .yellow {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: #2ce5c0;
+    padding: 5px 10px;
+    width: 100px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-radius: 2.5px;
+    color: white;
+    display: grid;
+    place-items: center;
+    -webkit-border-radius: 2.5px;
+    -moz-border-radius: 2.5px;
+    -ms-border-radius: 2.5px;
+    -o-border-radius: 2.5px;
+}
+
+.holder .orderd .yellow {
+    background: #ffb74d;
+}
+
+.holder .orderd .gray {
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 7px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.holder .orderd li input {
+    position: relative;
+}
+
+.holder li label {
+    padding-left: 10px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+}
+
+.holder li label::before {
+    position: absolute;
+    content: ' ';
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid black;
+    left: -20px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.holder li input[type="checkbox"] {
+    opacity: 0;
+}
+
+.holder li input[type="checkbox"]:checked+label::before {
+    box-shadow: rgba(47, 40, 149, 1) 0px 7px 29px 0px;
+    background: linear-gradient(90deg, rgba(47, 40, 149, 1) 0%, rgba(116, 33, 160, 1) 100%);
+}
+
+.holder li input[type="checkbox"]:checked .holder {
+    color: blue;
+}
+
+.holder .orderd li img {
+    width: 60px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.holder .orderd li i {}
+
+
+/* ---------------- */
+
+.holder .pages {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.holder .pages .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.holder .pages p {
+    color: #a8a8a8
+}
+
+.holder .pages span {
+    cursor: pointer;
+    padding: 0 10px;
+    color: #a8a8a8;
+}
+
+.holder .pages h2 {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    margin: 0;
+    border: 1px solid #d2d2d2;
+    color: #cccccc;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.holder .pages h2:first-of-type {
+    background-color: rgba(47, 40, 149, 1);
+    color: white;
+}

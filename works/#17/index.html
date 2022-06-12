@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Font awsome 6 free -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="dashboard">
+        <div class="one">
+            <ul>
+                <li>
+                    <a href="#"> <i class="fa-solid fa-igloo"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa-solid fa-screwdriver-wrench"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="two">
+            <div class="logo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAAAmCAYAAAAFkDNCAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpFN0U2MTQzQzI2MTVFQTExQkYwRkQxMDBCRUE4OEIwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0NUFFNzgyMTE1MkIxMUVBQkI5OTg4NEVDOEI2NzUzMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0NUFFNzgyMDE1MkIxMUVBQkI5OTg4NEVDOEI2NzUzMyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkU4RTYxNDNDMjYxNUVBMTFCRjBGRDEwMEJFQTg4QjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkU3RTYxNDNDMjYxNUVBMTFCRjBGRDEwMEJFQTg4QjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+r0pNmAAABV5JREFUeNrsXE2IHEUUrmw2SmJC6IOuShRskYCoRMe/gwcNs6iIggmzKIhE1JljjrOecgvTevAm2UY8KP7tmqOIZjSIJCpmb4picBQhQiTaCYJCTLK+x742ReVVd011zXTtpD547PRPVVfX++r9VNX2umt2nRYleAJkJ8g9ILeLajgO8iXJ23ji5MGtIsAfrCsgxAsgL4LcO6Jn/wjyOhDilaAGvwlxFci7II+PqQ1fgzwNxPg5qKN+TCnHN4B8P0YyIO4D+W5m95n7gzr8IsR6kK+IFOPGRpCjQIrrgkr8IcSHINfX6b5ADgeV+EGIJ0Ee9qA928FKvBTUUn9QiRH/LZ606S+QayHI/NvkZiDQ5ay/LkiTfqcgS8NWoKb90zTHYEOG30A+IFOfYw/IloovuYXqee0yH6wxiYy+QoaedIzEuBtkucpDkRC7LMt+C7JXOfeYA0IgHjEhBFgHrtNMkFXtuDGgpShcKIOvyZRpuiDEXZZlNzGN3eCoM26r0GkmwJE2u8YtyIA5V5nkSIgdlmXPKscr6PsdvexMCO9KMU9/22TxEsWlWBNixbLsZokAmK2cp3mMfC7hPKWxNi5kJejbyO11SJxhmhRnA1zs+lVyF3+A3KhYjrdAnrGo+4LhfUuMmWzRqJExy3SmHJypZhdHWkR1NTSdnl9rUH19ak9WUCcXOOb1RHRP39D0N6mcjITqaTP3J8oxlm0qWVp/ukrKqsQMVzNu5NwohwikTAN4oQHzoqIgOlfRY0wxKnVRClg7Sv0LzHPyeGZWU2efSRl7jJJz5WUlr99gyuflGtQeNeaQ09JFJSDH6+mUQ/3gvMEVyrn1a9AUY2ce0mQvMV1raMpGdL0MvZJguMtYmWHQYQi1QO3L61ffrwMDLHNJiM2MhfhnDRKiJXWcKOhUUUCKMlNvouyowjsgGeaY+hbpr/r8BMjQz2MIW/wA8rwUVCIZDoDcRK4CA8M7JyiIa2hy/3nJ57c0/ltGW5Mu5uY+1oxgm9Q6UZSP7T+mkG0gxxdVCIFB5FHl3KdkKdY60Nemit/XkSFRlJCVWADOt88qJr7PKM4GCT0vVtzeJa5CSCPbFlcy536ZADIMyNz2NQGfbJYTg2helJAqZfz9gM67SE3nigiTuwoXhJhUmC4QLRcoYRi4qqeo/lRD/EvIGwhhr4jI0fOiEb9PxLip3HXEoybEJM8wcvMdsaFb0NVRdH/TUbuLMqOFmd1nIleE4JS/cYIJwZn2RaWzY1JAESEGTNbRZuYhXBCipbEOMqm7rgjBTXmfnfDYImM69CexOhl1iH6XpYupZhQfk+roOWhvxJAzZYLlLliJpgtCbGLO7aEHHhEX1zkmKbZINB3fHGJEpxrXkc9zxI7a21OsV0Zp8hxD7P9dx5RGsSbYzsxjfEM59QMgH1d4mQ2ekiIxSAdTA2LNlQSvmbDYDqfEH22m7Zm4uEoqOFeHhDheYR5i35AWxBR/emwpOqTQZSY+mBdmy9FY9mbNHAQSocpWOM5VqCnmEkO4FliJNm6yfQMOnqvQQc+K1WVuFQeE/Vr94ZMHt+40ubHmTbYRmfqBxg2YQl7+Hiu4TbafVyTEm2J1z8NHICfo3DaQhyrUecT2hWqIK1wo0Zv9nWghkBSnQHz6N+xtoOgTImDswBgCVyZf9ahN7wQy1EsIxH6Q3z1oD26d2xvUUj8h/gV50IP2PArW4VRQS/2EQOBnAJ6qsS1dIMMnQSX+EALxPk1qnB5zO3CTxstBHf4RAoG7nm4V9A2oEQM/QbADyJAGVfiTdhZdv0OsfmsKp6Jj4Wa5HDOIL0DeA/ksfHTML/wnwACT7EQpgrkk+QAAAABJRU5ErkJggg=="
+                    loading="lazy" alt="…"> </div>
+            <div class="info">
+                <span>0.0035 <i class="fa-solid fa-bitcoin-sign"></i></span>
+                <span>219.62 USD</span>
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                    <p>David Elvito</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+        <p class="wb">welcome back, <span>Username</span></p>
+        <div class="three">
+            <div class="row row-1">
+                <div class="links">
+                    <a href="#">BUY</a>
+                    <a href="#">SELL</a>
+                </div>
+                <div class="boxs">
+                    <div class="box">
+                        <h3>Currency</h3>
+                        <div class="cell">
+                            <p>Bitcoin</p>
+                            <span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                125.00 USD
+                            </span>
+                        </div>
+                        <h3>Currency</h3>
+                        <div class="cell">
+                            <p>Bitcoin</p>
+                            <span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                125.00 USD
+                            </span>
+                        </div>
+                        <h3>Currency</h3>
+                        <div class="cell">
+                            <p>Bitcoin</p>
+                            <span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                125.00 USD
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="monthly">
+                    <p>monthly Limit</p>
+                    <p>$49750 remaining</p>
+                </div>
+                <a class="ex" href="#">Exchange Now</a>
+                <span class="note">
+                    Note:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio sint aperiam temporibus numquam obcaecati adipisci id itaque aut pariatur facilis!
+                </span>
+            </div>
+            <div class="row-2">
+                <div class="sellers">
+                    <div class=".sell sell-1">
+                        <img src="images/seller-1.jpg" alt="seller-1.jpg">
+                        <span>Stive</span>
+                        <span>Lambo</span>
+                        <a class="blue" href="#">Stive.lambo@welocme.com</a>
+                    </div>
+                    <div class=".sell sell-2">
+                        <img src="images/seller-2.jpg" alt="seller-2.jpg">
+                        <span>Sarah</span>
+                        <span>Monsti</span>
+                        <a class="blue" href="#">Sarah.Monsti@welocme.com</a>
+                    </div>
+                </div>
+                <div class="cell">
+                    <p class="blue">You Are Selling</p>
+                    <span class="blue">0.00254 BTC</span>
+                </div>
+                <div class="cell">
+                    <p>Payment Method</p>
+                    <span>Bank of America Bank ***********5432</span>
+                </div>
+                <div class="cell">
+                    <p>Exchange Rate</p>
+                    <span>0.000059237 BTC</span>
+                </div>
+                <div class="cell">
+                    <p>Fee</p>
+                    <span>$28.00 USD</span>
+                </div>
+                <div class="cell">
+                    <p>Total</p>
+                    <span>$854.00 USD</span>
+                </div>
+                <div class="cell">
+                    <p>Vat</p>
+                    <span class="red">$25.00 USD</span>
+                </div>
+                <div class="cell">
+                    <p>Sub Total</p>
+                    <span>$1232.00 USD</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

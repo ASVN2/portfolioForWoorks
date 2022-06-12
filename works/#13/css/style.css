@@ -1,0 +1,200 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Cairo', sans-serif;
+    -ms-overflow-style: none;
+    display: grid;
+    place-items: center;
+}
+
+
+/* Draw A */
+
+.animation {
+    display: flex;
+    gap: 50px;
+}
+
+@media(max-width:787px) {
+    .animation {
+        flex-direction: column;
+    }
+}
+
+.animation .a {
+    position: relative;
+    height: 200px;
+    width: 150px;
+}
+
+.animation .a .one {
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    background: #323234;
+    left: 0;
+    top: 0;
+}
+
+.animation .a .two {
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    background: #323234;
+    right: 0;
+    top: 0;
+}
+
+.animation .a .three {
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background: #323234;
+    right: 0;
+    top: 0;
+}
+
+.animation .a .four {
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background: #323234;
+    right: 0;
+    top: 40%;
+}
+
+
+/* Draw 7 */
+
+.animation .seven {
+    position: relative;
+    height: 200px;
+    width: 150px;
+}
+
+.animation .seven .one {
+    width: 50%;
+    height: 20px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: #323234;
+}
+
+.animation .seven .two {
+    width: 20px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    background: #323234;
+}
+
+.animation .seven .three {
+    width: 70%;
+    height: 20px;
+    top: 40%;
+    left: 20%;
+    position: absolute;
+    background: #323234;
+}
+
+.box {
+    background-color: #fea604;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    margin: 2.5px;
+    animation: moving 2.5s linear infinite;
+    -webkit-animation: moving 2.5s linear infinite;
+    animation-direction: alternate;
+}
+
+.box-s {
+    background-color: #fea604;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    margin: 2.5px;
+    animation: moving-s 2s linear infinite;
+    -webkit-animation: moving-s 2s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moving {
+    0% {
+        bottom: 0;
+        right: 0;
+    }
+    15% {
+        bottom: 100px;
+        right: 0;
+    }
+    30% {
+        bottom: 100px;
+        right: 130px;
+    }
+    45% {
+        right: 130px;
+        bottom: 180px;
+    }
+    60% {
+        right: 0px;
+        bottom: 180px;
+    }
+    75% {
+        right: 0;
+        bottom: 100px;
+    }
+    85% {
+        bottom: 100px;
+        right: 130px;
+    }
+    100% {
+        right: 130px;
+        bottom: 0px;
+    }
+}
+
+@keyframes moving-s {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    16% {
+        left: 75px;
+        top: 0;
+    }
+    32% {
+        left: 75px;
+        top: 80px;
+    }
+    49% {
+        left: 115px;
+        top: 80px;
+    }
+    56% {
+        left: 30px;
+        top: 80px;
+    }
+    74% {
+        left: 75px;
+        top: 80px;
+    }
+    100% {
+        left: 75px;
+        top: 180px;
+        animation-delay: 2s;
+    }
+}

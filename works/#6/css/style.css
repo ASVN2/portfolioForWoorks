@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Josefin+Sans:wght@300;500&family=Karla:wght@400;700&family=League+Spartan:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap');
+body {
+    font-family: 'Cairo', sans-serif;
+    -ms-overflow-style: none;
+    background: #f4f4f4;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 30px;
+    width: fit-content;
+    position: relative;
+}
+
+.hover::before {
+    content: 'This is Just Hover';
+    position: absolute;
+    top: -80px;
+    background-color: black;
+    left: 50%;
+    width: 130%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    transform: translateX(-50%);
+    display: none;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.hover::after {
+    content: ' ';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px;
+    border-color: black transparent transparent transparent;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    display: none;
+}
+
+.hover:hover::before,
+.hover:hover::after {
+    display: grid;
+}

@@ -1,0 +1,126 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    -ms-overflow-style: none;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* ------------------------- */
+
+.holder {
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.holder .text h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.holder .contant {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    place-items: center;
+}
+
+.holder .contant .row {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    gap: 20px;
+    height: 200px;
+    position: absolute;
+    bottom: 100px;
+    right: -180px;
+    background-color: transparent;
+}
+
+.holder .contant .row:nth-child(1) {
+    top: 100px;
+    left: -180px;
+    text-align: right;
+}
+
+.holder .contant .row:nth-child(2) {
+    top: 100px;
+    right: -180px;
+    flex-direction: row-reverse;
+}
+
+.holder .contant .row:nth-child(3) {
+    flex-direction: row-reverse;
+}
+
+.holder .contant .row:nth-child(4) {
+    bottom: 100px;
+    left: -180px;
+    text-align: right;
+}
+
+.holder .contant .row h2 {
+    font-size: 1.5rem;
+    color: #2d3644;
+}
+
+.holder .contant .row p {
+    color: #8a929d;
+    line-height: 1.5;
+}
+
+.holder .contant .row img {
+    border-radius: 50%;
+    width: 120px;
+    border: 10px solid white;
+}
+
+.holder .contant .main-row {
+    position: absolute;
+    top: 50%;
+    width: 70%;
+    height: 70%;
+    background: orange;
+    background: url("../images/img-5.jpg");
+    background-size: auto;
+    background-size: cover;
+    background-position: bottom;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px;
+    z-index: -1;
+    color: white;
+}
+
+.holder .contant .main-row::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.holder .contant .main-row p {
+    line-height: 2;
+}

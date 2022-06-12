@@ -1,0 +1,166 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    -ms-overflow-style: none;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* --------------------------------- */
+
+.holder {
+    padding: 20px 40px;
+}
+
+.holder .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.holder .head .box:first-child {
+    background-color: #ff5722;
+    color: white;
+    z-index: 1;
+    padding: 5px 20px;
+    position: relative;
+}
+
+.holder .head .box:first-child::before {
+    content: " ";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: -100vw;
+    background-color: #ff5722;
+    opacity: .5;
+}
+
+
+
+.holder .head .box:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding: 5px 10px;
+    color: white;
+}
+
+.holder .head .box:last-child p {
+    padding: 10px 20px;
+    color: gray;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    background-color: #dfdfdf;
+}
+
+.holder .head .box:last-child i {
+    background-color: #ff5722;
+    padding: 5px 25px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    color: #dfdfdf;
+}
+
+
+
+.holder .head .line {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #dfdfdf;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100vw;
+}
+
+
+/* -------------------------------------- */
+
+.holder .contant {
+    margin: auto;
+    width: 1000px;
+}
+
+.holder .contant .row {
+    display: flex;
+    background-color: #eeeeee;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.holder .contant .row h3 {
+    padding: 0 20px;
+    text-align: center;
+    color: #64676b;
+}
+
+.holder .contant .row h3 span:first-child {}
+
+.holder .contant .row h3 span:last-child {
+    display: block;
+    text-align: center;
+}
+
+.holder .contant .row img {
+    height: 150px;
+}
+
+.holder .contant .row .info {}
+
+.holder .contant .row .info h2 {
+    font-weight: normal;
+    font-size: 1.6rem;
+    padding-top: 20px;
+    color: #64676b;
+}
+
+.holder .contant .row .info ul {
+    display: flex;
+}
+
+.holder .contant .row .info ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    color: #959798;
+}
+
+.holder .contant .row .info ul li i {
+    padding-right: 5px;
+}
+
+.holder .contant .row .info ul li p {}
